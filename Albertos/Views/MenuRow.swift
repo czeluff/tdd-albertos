@@ -25,3 +25,9 @@ struct MenuRow: View {
         }
     }
 }
+
+struct MenuRow_Previews: PreviewProvider {
+    static var previews: some View {
+        MenuRow(viewModel: .init(item: menu[0]))
+    }
+}

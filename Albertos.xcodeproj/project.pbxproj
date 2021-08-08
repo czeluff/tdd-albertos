@@ -10,6 +10,9 @@
 		3D8493E226BF7149008F1AA5 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493E126BF7149008F1AA5 /* MenuListViewModelTests.swift */; };
 		3D8493E426BF7739008F1AA5 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493E326BF7739008F1AA5 /* MenuFetching.swift */; };
 		3D8493EB26BF79EB008F1AA5 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493EA26BF79EB008F1AA5 /* MenuFetchingPlaceholder.swift */; };
+		3D8493EE26C030E3008F1AA5 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493ED26C030E3008F1AA5 /* Typealiases.swift */; };
+		3D8493F526C0346B008F1AA5 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493F426C0346B008F1AA5 /* MenuFetchingStub.swift */; };
+		3D8493F826C03C58008F1AA5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493F726C03C58008F1AA5 /* Errors.swift */; };
 		3D95C75526BF5E9D004F3857 /* AlbertosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C75426BF5E9D004F3857 /* AlbertosApp.swift */; };
 		3D95C75926BF5E9E004F3857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D95C75826BF5E9E004F3857 /* Assets.xcassets */; };
 		3D95C75C26BF5E9E004F3857 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D95C75B26BF5E9E004F3857 /* Preview Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		3D8493E126BF7149008F1AA5 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
 		3D8493E326BF7739008F1AA5 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
 		3D8493EA26BF79EB008F1AA5 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
+		3D8493ED26C030E3008F1AA5 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		3D8493F426C0346B008F1AA5 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
+		3D8493F726C03C58008F1AA5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		3D95C75126BF5E9D004F3857 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D95C75426BF5E9D004F3857 /* AlbertosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosApp.swift; sourceTree = "<group>"; };
 		3D95C75826BF5E9E004F3857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +127,63 @@
 			path = Placeholders;
 			sourceTree = "<group>";
 		};
+		3D8493EC26C030D2008F1AA5 /* Typealiases */ = {
+			isa = PBXGroup;
+			children = (
+				3D8493ED26C030E3008F1AA5 /* Typealiases.swift */,
+			);
+			path = Typealiases;
+			sourceTree = "<group>";
+		};
+		3D8493EF26C033D2008F1AA5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D95C78926BF5EFA004F3857 /* Collection+Safe.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3D8493F026C033E6008F1AA5 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				3D95C78826BF5EFA004F3857 /* Fixtures.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		3D8493F126C0340B008F1AA5 /* Function Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D95C78626BF5EFA004F3857 /* MenuGroupingTests.swift */,
+			);
+			path = "Function Tests";
+			sourceTree = "<group>";
+		};
+		3D8493F226C0343D008F1AA5 /* ViewModel Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D95C78726BF5EFA004F3857 /* MenuRowViewModelTests.swift */,
+				3D8493E126BF7149008F1AA5 /* MenuListViewModelTests.swift */,
+			);
+			path = "ViewModel Tests";
+			sourceTree = "<group>";
+		};
+		3D8493F326C03449008F1AA5 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				3D8493F426C0346B008F1AA5 /* MenuFetchingStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		3D8493F626C03C3D008F1AA5 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3D8493F726C03C58008F1AA5 /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		3D95C74826BF5E9D004F3857 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				3D95C75426BF5E9D004F3857 /* AlbertosApp.swift */,
+				3D8493EC26C030D2008F1AA5 /* Typealiases */,
 				3D8493E926BF79D5008F1AA5 /* Placeholders */,
 				3D8493E826BF77DB008F1AA5 /* Protocols */,
 				3D8493E726BF77CD008F1AA5 /* Models */,
@@ -166,11 +230,12 @@
 		3D95C76426BF5E9E004F3857 /* AlbertosTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D95C78826BF5EFA004F3857 /* Fixtures.swift */,
-				3D95C78926BF5EFA004F3857 /* Collection+Safe.swift */,
-				3D95C78626BF5EFA004F3857 /* MenuGroupingTests.swift */,
-				3D95C78726BF5EFA004F3857 /* MenuRowViewModelTests.swift */,
-				3D8493E126BF7149008F1AA5 /* MenuListViewModelTests.swift */,
+				3D8493F126C0340B008F1AA5 /* Function Tests */,
+				3D8493F226C0343D008F1AA5 /* ViewModel Tests */,
+				3D8493F326C03449008F1AA5 /* Stubs */,
+				3D8493F026C033E6008F1AA5 /* Fixtures */,
+				3D8493EF26C033D2008F1AA5 /* Extensions */,
+				3D8493F626C03C3D008F1AA5 /* Errors */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -316,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8493EE26C030E3008F1AA5 /* Typealiases.swift in Sources */,
 				3D8493E426BF7739008F1AA5 /* MenuFetching.swift in Sources */,
 				3D95C78526BF5EE2004F3857 /* MenuItem.swift in Sources */,
 				3D95C78226BF5EE2004F3857 /* MenuRow.swift in Sources */,
@@ -332,9 +398,11 @@
 			files = (
 				3D95C78B26BF5EFA004F3857 /* MenuRowViewModelTests.swift in Sources */,
 				3D95C78C26BF5EFA004F3857 /* Fixtures.swift in Sources */,
+				3D8493F526C0346B008F1AA5 /* MenuFetchingStub.swift in Sources */,
 				3D95C78D26BF5EFA004F3857 /* Collection+Safe.swift in Sources */,
 				3D8493E226BF7149008F1AA5 /* MenuListViewModelTests.swift in Sources */,
 				3D95C78A26BF5EFA004F3857 /* MenuGroupingTests.swift in Sources */,
+				3D8493F826C03C58008F1AA5 /* Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
