@@ -19,3 +19,4 @@ extension MenuItem: Identifiable {
 }
 
 extension MenuItem: Equatable {}
+extension MenuItem: Decodable {}

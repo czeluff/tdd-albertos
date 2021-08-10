@@ -32,6 +32,7 @@ class MenuGroupingTests: XCTestCase {
         let sections = groupMenuByCategory(menu)
         XCTAssertEqual(sections.count, 1)
         let section = try XCTUnwrap(sections.first)
+        
         XCTAssertEqual(section.items.count, 2)
         XCTAssertEqual(section.items.first?.name, "name")
         XCTAssertEqual(section.items.last?.name, "other name")

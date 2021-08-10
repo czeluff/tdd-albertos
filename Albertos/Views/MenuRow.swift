@@ -11,11 +11,11 @@ struct MenuRow: View {
     let viewModel: ViewModel
     
     var body: some View {
-        HStack {
-            Text(viewModel.text)
-        }
+        Text(viewModel.text)
     }
-    
+}
+
+extension MenuRow {
     struct ViewModel {
         let text: String
         init(

@@ -37,7 +37,9 @@ struct MenuList: View {
             }
         }
     }
-    
+}
+
+extension MenuList {
     class ViewModel: ObservableObject {
         @Published private(set) var sections: Result<[MenuSection], Error> = .success([])
         init(
