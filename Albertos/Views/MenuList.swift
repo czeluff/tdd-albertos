@@ -55,7 +55,8 @@ extension MenuList {
                         self?.sections = .failure(error)
                     },
                     receiveValue: { [weak self] value in
-                        self?.sections = .success(value) }
+                        self?.sections = .success(value)
+                    }
                 )
                 .store(in: &cancellables)
         }
@@ -66,6 +67,6 @@ extension MenuList {
 
 struct MenuList_Previews: PreviewProvider {
     static var previews: some View {
-        MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder(forceFail: false)))
+        MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder(forceFail: true)))
     }
 }

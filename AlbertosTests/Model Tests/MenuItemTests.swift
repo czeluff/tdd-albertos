@@ -11,12 +11,12 @@ class MenuItemTests: XCTestCase {
     
     // This is probably all you ever want to do with JSON Decoding validation, is test to ensure that decoding didn't throw
     
-    func testWhenDecodingFromJSONDataDoesNotThrow() throws {
+    func testWhenDecodingFromJSONFileDoesNotThrow() throws {
         let data = try dataFromJSONFileNamed("menu_item")
         XCTAssertNoThrow(try JSONDecoder().decode(MenuItem.self, from: data))
     }
     
-    func testWhenDecodingFromJSONFileDoesNotThrow() throws {
+    func testWhenDecodingFromJSONDataDoesNotThrow() throws {
         let json = #"{ "name": "a name", "category": "a category", "spicy": true, "price": 10 }"#
         let data = try XCTUnwrap(json.data(using: .utf8))
         XCTAssertNoThrow(try JSONDecoder().decode(MenuItem.self, from: data))

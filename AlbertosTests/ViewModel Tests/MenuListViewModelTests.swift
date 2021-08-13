@@ -71,4 +71,9 @@ class MenuListViewModelTests: XCTestCase {
             .store(in: &cancellables)
         wait(for: [expectation], timeout: 1)
     }
+    
+    // TODO: Should test this function, given the existing setup.
+    func testDishOfDay() {
+        
+    }
 }

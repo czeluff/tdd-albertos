@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0047A126C6210600631AE9 /* URLSession+NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0047A026C6210600631AE9 /* URLSession+NetworkFetching.swift */; };
+		3D199E4B26C6473500389CFF /* PublisherStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D199E4A26C6473500389CFF /* PublisherStub.swift */; };
 		3D8493E226BF7149008F1AA5 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493E126BF7149008F1AA5 /* MenuListViewModelTests.swift */; };
-		3D8493E426BF7739008F1AA5 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493E326BF7739008F1AA5 /* MenuFetching.swift */; };
+		3D8493E426BF7739008F1AA5 /* APIFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493E326BF7739008F1AA5 /* APIFetching.swift */; };
 		3D8493EB26BF79EB008F1AA5 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493EA26BF79EB008F1AA5 /* MenuFetchingPlaceholder.swift */; };
 		3D8493EE26C030E3008F1AA5 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493ED26C030E3008F1AA5 /* Typealiases.swift */; };
-		3D8493F526C0346B008F1AA5 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493F426C0346B008F1AA5 /* MenuFetchingStub.swift */; };
+		3D8493F526C0346B008F1AA5 /* FetchingStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493F426C0346B008F1AA5 /* FetchingStubs.swift */; };
 		3D8493F826C03C58008F1AA5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493F726C03C58008F1AA5 /* Errors.swift */; };
 		3D8493FD26C21746008F1AA5 /* MenuItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8493FC26C21746008F1AA5 /* MenuItemTests.swift */; };
 		3D8493FF26C21845008F1AA5 /* menu_item.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D8493FE26C21845008F1AA5 /* menu_item.json */; };
 		3D84940126C218DF008F1AA5 /* XCTestCase+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84940026C218DF008F1AA5 /* XCTestCase+JSON.swift */; };
+		3D84940326C60B45008F1AA5 /* MenuFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84940226C60B45008F1AA5 /* MenuFetcherTests.swift */; };
+		3D84940626C60C7C008F1AA5 /* MenuFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84940526C60C7C008F1AA5 /* MenuFetcher.swift */; };
+		3D84940826C6125F008F1AA5 /* NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D84940726C6125F008F1AA5 /* NetworkFetching.swift */; };
 		3D95C75526BF5E9D004F3857 /* AlbertosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C75426BF5E9D004F3857 /* AlbertosApp.swift */; };
 		3D95C75926BF5E9E004F3857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D95C75826BF5E9E004F3857 /* Assets.xcassets */; };
 		3D95C75C26BF5E9E004F3857 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D95C75B26BF5E9E004F3857 /* Preview Assets.xcassets */; };
@@ -48,15 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D0047A026C6210600631AE9 /* URLSession+NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+NetworkFetching.swift"; sourceTree = "<group>"; };
+		3D199E4A26C6473500389CFF /* PublisherStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherStub.swift; sourceTree = "<group>"; };
 		3D8493E126BF7149008F1AA5 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
-		3D8493E326BF7739008F1AA5 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
+		3D8493E326BF7739008F1AA5 /* APIFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetching.swift; sourceTree = "<group>"; };
 		3D8493EA26BF79EB008F1AA5 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
 		3D8493ED26C030E3008F1AA5 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		3D8493F426C0346B008F1AA5 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
+		3D8493F426C0346B008F1AA5 /* FetchingStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingStubs.swift; sourceTree = "<group>"; };
 		3D8493F726C03C58008F1AA5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		3D8493FC26C21746008F1AA5 /* MenuItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTests.swift; sourceTree = "<group>"; };
 		3D8493FE26C21845008F1AA5 /* menu_item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu_item.json; sourceTree = "<group>"; };
 		3D84940026C218DF008F1AA5 /* XCTestCase+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+JSON.swift"; sourceTree = "<group>"; };
+		3D84940226C60B45008F1AA5 /* MenuFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetcherTests.swift; sourceTree = "<group>"; };
+		3D84940526C60C7C008F1AA5 /* MenuFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetcher.swift; sourceTree = "<group>"; };
+		3D84940726C6125F008F1AA5 /* NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetching.swift; sourceTree = "<group>"; };
 		3D95C75126BF5E9D004F3857 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D95C75426BF5E9D004F3857 /* AlbertosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosApp.swift; sourceTree = "<group>"; };
 		3D95C75826BF5E9E004F3857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0047A226C6210D00631AE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D0047A026C6210600631AE9 /* URLSession+NetworkFetching.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3D8493E626BF77C0008F1AA5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +129,10 @@
 		3D8493E726BF77CD008F1AA5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3D8493E926BF79D5008F1AA5 /* Model Placeholders */,
 				3D95C78026BF5EE2004F3857 /* MenuItem.swift */,
 				3D95C77F26BF5EE2004F3857 /* MenuSection.swift */,
+				3D84940526C60C7C008F1AA5 /* MenuFetcher.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,17 +140,18 @@
 		3D8493E826BF77DB008F1AA5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3D8493E326BF7739008F1AA5 /* MenuFetching.swift */,
+				3D8493E326BF7739008F1AA5 /* APIFetching.swift */,
+				3D84940726C6125F008F1AA5 /* NetworkFetching.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		3D8493E926BF79D5008F1AA5 /* Placeholders */ = {
+		3D8493E926BF79D5008F1AA5 /* Model Placeholders */ = {
 			isa = PBXGroup;
 			children = (
 				3D8493EA26BF79EB008F1AA5 /* MenuFetchingPlaceholder.swift */,
 			);
-			path = Placeholders;
+			path = "Model Placeholders";
 			sourceTree = "<group>";
 		};
 		3D8493EC26C030D2008F1AA5 /* Typealiases */ = {
@@ -175,13 +196,14 @@
 			path = "ViewModel Tests";
 			sourceTree = "<group>";
 		};
-		3D8493F326C03449008F1AA5 /* Stubs & Data */ = {
+		3D8493F326C03449008F1AA5 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				3D8493F426C0346B008F1AA5 /* MenuFetchingStub.swift */,
-				3D8493FE26C21845008F1AA5 /* menu_item.json */,
+				3D84940426C60C13008F1AA5 /* Test Data */,
+				3D8493F426C0346B008F1AA5 /* FetchingStubs.swift */,
+				3D199E4A26C6473500389CFF /* PublisherStub.swift */,
 			);
-			path = "Stubs & Data";
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		3D8493F626C03C3D008F1AA5 /* Errors */ = {
@@ -195,9 +217,19 @@
 		3D8493FB26C21731008F1AA5 /* Model Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3D8493F326C03449008F1AA5 /* Stubs */,
 				3D8493FC26C21746008F1AA5 /* MenuItemTests.swift */,
+				3D84940226C60B45008F1AA5 /* MenuFetcherTests.swift */,
 			);
 			path = "Model Tests";
+			sourceTree = "<group>";
+		};
+		3D84940426C60C13008F1AA5 /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				3D8493FE26C21845008F1AA5 /* menu_item.json */,
+			);
+			path = "Test Data";
 			sourceTree = "<group>";
 		};
 		3D95C74826BF5E9D004F3857 = {
@@ -225,10 +257,10 @@
 			children = (
 				3D95C75426BF5E9D004F3857 /* AlbertosApp.swift */,
 				3D8493EC26C030D2008F1AA5 /* Typealiases */,
-				3D8493E926BF79D5008F1AA5 /* Placeholders */,
 				3D8493E826BF77DB008F1AA5 /* Protocols */,
 				3D8493E726BF77CD008F1AA5 /* Models */,
 				3D8493E626BF77C0008F1AA5 /* Views */,
+				3D0047A226C6210D00631AE9 /* Extensions */,
 				3D95C75826BF5E9E004F3857 /* Assets.xcassets */,
 				3D95C75A26BF5E9E004F3857 /* Preview Content */,
 			);
@@ -249,7 +281,6 @@
 				3D8493F126C0340B008F1AA5 /* Function Tests */,
 				3D8493F226C0343D008F1AA5 /* ViewModel Tests */,
 				3D8493FB26C21731008F1AA5 /* Model Tests */,
-				3D8493F326C03449008F1AA5 /* Stubs & Data */,
 				3D8493F026C033E6008F1AA5 /* Fixtures */,
 				3D8493EF26C033D2008F1AA5 /* Extensions */,
 				3D8493F626C03C3D008F1AA5 /* Errors */,
@@ -399,11 +430,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D84940626C60C7C008F1AA5 /* MenuFetcher.swift in Sources */,
 				3D8493EE26C030E3008F1AA5 /* Typealiases.swift in Sources */,
-				3D8493E426BF7739008F1AA5 /* MenuFetching.swift in Sources */,
+				3D8493E426BF7739008F1AA5 /* APIFetching.swift in Sources */,
 				3D95C78526BF5EE2004F3857 /* MenuItem.swift in Sources */,
 				3D95C78226BF5EE2004F3857 /* MenuRow.swift in Sources */,
+				3D0047A126C6210600631AE9 /* URLSession+NetworkFetching.swift in Sources */,
 				3D95C78126BF5EE2004F3857 /* MenuList.swift in Sources */,
+				3D84940826C6125F008F1AA5 /* NetworkFetching.swift in Sources */,
 				3D95C78426BF5EE2004F3857 /* MenuSection.swift in Sources */,
 				3D95C75526BF5E9D004F3857 /* AlbertosApp.swift in Sources */,
 				3D8493EB26BF79EB008F1AA5 /* MenuFetchingPlaceholder.swift in Sources */,
@@ -414,10 +448,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D84940326C60B45008F1AA5 /* MenuFetcherTests.swift in Sources */,
 				3D84940126C218DF008F1AA5 /* XCTestCase+JSON.swift in Sources */,
 				3D95C78B26BF5EFA004F3857 /* MenuRowViewModelTests.swift in Sources */,
+				3D199E4B26C6473500389CFF /* PublisherStub.swift in Sources */,
 				3D95C78C26BF5EFA004F3857 /* Fixtures.swift in Sources */,
-				3D8493F526C0346B008F1AA5 /* MenuFetchingStub.swift in Sources */,
+				3D8493F526C0346B008F1AA5 /* FetchingStubs.swift in Sources */,
 				3D95C78D26BF5EFA004F3857 /* Collection+Safe.swift in Sources */,
 				3D8493E226BF7149008F1AA5 /* MenuListViewModelTests.swift in Sources */,
 				3D8493FD26C21746008F1AA5 /* MenuItemTests.swift in Sources */,

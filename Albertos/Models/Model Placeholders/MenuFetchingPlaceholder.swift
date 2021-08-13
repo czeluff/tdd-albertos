@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class MenuFetchingPlaceholder: MenuFetching {
+class MenuFetchingPlaceholder: MenuFetching, DishOfDayFetching {
     
     var forceFail: Bool
     
@@ -20,7 +20,7 @@ class MenuFetchingPlaceholder: MenuFetching {
         
         let value: Result<[MenuItem], Error> =
         forceFail ?
-            .failure(NSError(domain: "", code: 420, userInfo: [NSLocalizedDescriptionKey: "Failed boi"])) :
+            .failure(NSError(domain: "", code: 420, userInfo: [NSLocalizedDescriptionKey: "Failed menu"])) :
             .success(menu)
         
         return Future { $0(value) }
@@ -29,16 +29,23 @@ class MenuFetchingPlaceholder: MenuFetching {
           .eraseToAnyPublisher()
     }
     
+    func fetchDishOfDay() -> AnyPublisher<MenuItem, Error> {
+        
+        let value: Result<MenuItem, Error> =
+        forceFail ?
+            .failure(NSError(domain: "", code: 421, userInfo: [NSLocalizedDescriptionKey: "Failed dish of day"])) :
+            .success(dishOfDay)
+        
+        return Future { $0(value) }
+            .delay(for: 0.5, scheduler: RunLoop.main)
+            .eraseToAnyPublisher()
+    }
+    
 }
 
 // In this first iteration the menu is an hard-coded array
 let menu = [
-    MenuItem(
-        category: "starters",
-        name: "Caprese Salad",
-        spicy: true,
-        price: 10
-    ),
+    MenuItem(category: "starters", name: "Caprese Salad", spicy: true, price: 10),
     MenuItem(category: "starters", name: "Arancini Balls", spicy: false, price: 10),
     MenuItem(category: "pastas", name: "Penne all'Arrabbiata", spicy: false, price: 10),
     MenuItem(category: "pastas", name: "Spaghetti Carbonara", spicy: false, price: 10),
@@ -47,4 +54,6 @@ let menu = [
     MenuItem(category: "desserts", name: "Tiramisù", spicy: false, price: 10),
     MenuItem(category: "desserts", name: "Crema Catalana", spicy: false, price: 10),
 ]
+
+let dishOfDay = MenuItem(category: "desserts", name: "Chef's Chocolate Salty Balls", spicy: true, price: 10)
 
