@@ -67,6 +67,15 @@ extension MenuList {
 
 struct MenuList_Previews: PreviewProvider {
     static var previews: some View {
-        MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder(forceFail: true)))
+        MenuList(
+            viewModel: .init(
+                menuFetching: MenuFetcher(
+                    networkFetcher: NetworkFetchingPlaceholder(
+//                        returning: .failure(URLError(.badServerResponse))
+                        returning: .success(PlaceholderData.encodedMenu)
+                    )
+                )
+            )
+        )
     }
 }

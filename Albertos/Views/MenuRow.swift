@@ -28,6 +28,6 @@ extension MenuRow {
 
 struct MenuRow_Previews: PreviewProvider {
     static var previews: some View {
-        MenuRow(viewModel: .init(item: menu[0]))
+        MenuRow(viewModel: .init(item: PlaceholderData.dishOfDay))
     }
 }
